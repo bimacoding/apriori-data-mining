@@ -22,7 +22,7 @@ class database {
     }
 
     function load_conf_db() {
-        $path = dirname(__FILE__) . '/koneksi.php';
+        $path = dirname(__FILE__) . '/configs/koneksi.php';
         if (file_exists($path)) {
             $conf = include $path;
             $this->servername = @$conf['host'];

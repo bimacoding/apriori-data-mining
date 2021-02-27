@@ -15,9 +15,8 @@ include_once "import/excel_reader2.php";
                 <h1>
                     Data Transaksi
                 </h1>
-            </div><!-- /.page-header -->
+            </div>
 <?php
-//object database class
 $db_object = new database();
 
 $pesan_error = $pesan_success = "";

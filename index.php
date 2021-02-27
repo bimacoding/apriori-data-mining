@@ -103,20 +103,20 @@ include_once 'fungsi.php';
                     if (file_exists($menu . ".php")) {
                         include $menu . '.php';
                     } else {
-                        include "not_found.php";
+                        include "template/not_found.php";
                     }
                 } else {
-                    include "forbidden.php";
+                    include "template/forbidden.php";
                 }
             } 
             else {
-                include "home.php";
+                include "template/home.php";
             }
             ?>
 
             <!--FOOTER-->
             <?php
-            include "footer.php";
+            include "template/footer.php";
             ?>
 
             <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
