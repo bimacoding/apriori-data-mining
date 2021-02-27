@@ -4,8 +4,8 @@ if (!isset($_SESSION['apriori_toko_id'])) {
     header("location:index.php?menu=forbidden");
 }
 
-include_once "database.php";
-include_once "fungsi.php";
+include_once "configs/database.php";
+include_once "configs/fungsi.php";
 include_once "mining.php";
 ?>
 <div class="main-content">

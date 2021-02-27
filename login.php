@@ -14,7 +14,7 @@ if ($login == 1) {
     $komen = "Silahkan Login Ulang, Cek username dan Password Anda!!";
 }
 
-include_once "fungsi.php";
+include_once "configs/fungsi.php";
 ?>
 
 <!DOCTYPE html>
@@ -149,7 +149,7 @@ include_once "fungsi.php";
 
             <!--FOOTER-->
             <?php
-            include "footer.php";
+            include "template/footer.php";
             ?>
 
             <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">

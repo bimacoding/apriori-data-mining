@@ -14,7 +14,7 @@ if (!isset($_SESSION['apriori_mining_id']) &&
         ( $menu != 'tentang' & $menu != 'not_found' & $menu != 'forbidden')) {
     header("location:login.php");
 }
-include_once 'fungsi.php';
+include_once 'configs/fungsi.php';
 //include 'koneksi.php';
 ?>
 <!DOCTYPE html>

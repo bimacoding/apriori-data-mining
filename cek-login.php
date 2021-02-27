@@ -1,6 +1,6 @@
 <?php
 session_start();
-$path_to_root = "";
+$path_to_root = "configs/";
 include $path_to_root . 'database.php';
 
 //object database class
