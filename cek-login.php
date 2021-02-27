@@ -1,13 +1,13 @@
 <?php
-session_start(); // harus ada di bagian paling atas kode
+session_start();
 $path_to_root = "";
 include $path_to_root . 'database.php';
 
 //object database class
 $db = new database();
 
-$user = strip_tags(trim($_POST['username'])); #echo $user;
-$pass = strip_tags(trim($_POST['password'])); #echo $pass;
+$user = strip_tags(trim($_POST['username']));
+$pass = strip_tags(trim($_POST['password']));
 
 $sql = get_sql_login_admin_page($user, $pass);
 
@@ -32,12 +32,6 @@ if ($num_rows > 0) {
 }
 
 
-/**
- * query get login 
- * @param string $user username
- * @param string $pass password
- * @return string
- */
 function get_sql_login_admin_page($user, $pass){
     $sql = "SELECT * FROM users"
         . " WHERE username = '" . $user . "' AND password = MD5('" . $pass . "')";
