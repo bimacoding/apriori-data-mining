@@ -1,6 +1,6 @@
 <?php
-include_once "../database.php";
-include_once "../fungsi.php";
+include_once "../configs/database.php";
+include_once "../configs/fungsi.php";
 include_once "fpdf16/fpdf.php";
 $id_process = $_REQUEST['id_process'];
 //object database class

@@ -65,7 +65,7 @@ include_once "configs/fungsi.php";
     <body class="no-skin">
         <!--HEADER-->
         <?php
-        include "header.php";
+        include "template/header.php";
         ?>
         <div class="main-container ace-save-state" id="main-container">
             <script type="text/javascript">

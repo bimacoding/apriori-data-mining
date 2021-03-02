@@ -1,7 +1,7 @@
 <?php
 session_start();
-$path_to_root = "configs/";
-include $path_to_root . 'database.php';
+$path_to_root = "";
+include('configs/database.php');
 
 //object database class
 $db = new database();
